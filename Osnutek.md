@@ -21,6 +21,7 @@ Naši cilji pri tej seminarski nalogi so ugotoviti, ali se pogostost vzroka smrt
 ## Vir in oblika podatkov
 Podatke smo našli na spletni strani ministrstva za upravo:  
 https://podatki.gov.si/dataset/surs05l3016s
+
 Spadajo pod področje: “Prebivalstvo in družba”. 
 
 To zbirko podatkov smo izbrali zato, ker nudi vpogled v pogoste vzroke smrti v Sloveniji, kar je ključno za razumevanje zdravstvenega stanja celotnega prebivalstva. Podatki vsebujejo veliko podrobnosti, npr.:  število umrlih po spolu in starosti in število umrlih na 1.000 prebivalcev, povprečna starost umrlih, vzrok smrti, pričakovano trajanje življenja, itd. (Vzrok smrti so vse bolezni, bolezenska stanja ali poškodbe, ki so povzročile smrt ali so privedle do smrti, in okoliščine nezgode ali nasilja, ki so povzročile take poškodbe).
