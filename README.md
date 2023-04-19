@@ -13,10 +13,8 @@ Vsak se je že kdaj vprašal kako bo umrl, zato smo se mi odločili raziskati za
 Zanimajo nas najpogostejši vzroki smrti v Sloveniji in ali se razlikujejo glede na spol in regijo. Izbrali smo si podatke, ki nam prikažejo pogoste vzroke smrti v Sloveniji. S tem si lažje predstavljamo zdravstveno stanje celotnega prebivalstva in zaradi česa ljudje umrejo. Pogledali smo tudi ali je v času korone virusa število umrlih res naraslo.<br>
 
 ### Opis podatkov
-Uporabljali bomo en vir podakov, z ministrstva za upravo in spadajo pod področje prebivalstva in družbe : https://podatki.gov.si/dataset/surs05l3016s<br>
-Podatki nudijo vpogled v pogoste vzroke smrti v Sloveniji, kar je ključno za razumevanje zdravstvenega stanja celotnega prebivalstva.<br>
-Razdeljeni so na spol, statistično regijo, leto in vzrok smrti. Bolezni so opredeljene v šestih skupinah: nekatere infekcijske in parazitske bolezni, neoplazme, bolezni obtočil, bolezni dihal, bolezni prebavil ter poškodbe, zastrupitve in nekatere druge posledice zunanjih vzrokov. Meritve so opredeljene na enega ali tisoč prebivalcev.
-Podatki so tipa števec in obsegajo 10 920 podatkovnih polj.<br>
+Uporabljali bomo en vir podakov, z ministrstva za upravo in spadajo pod področje prebivalstva in družbe: https://podatki.gov.si/dataset/surs05l3016s. Podatki nudijo vpogled v pogoste vzroke smrti v Sloveniji, kar je ključno za razumevanje zdravstvenega stanja celotnega prebivalstva. Razdeljeni so na spol, statistično regijo, leto in vzrok smrti. Bolezni so opredeljene v šestih skupinah: nekatere infekcijske in parazitske bolezni, neoplazme, bolezni obtočil, bolezni dihal, bolezni prebavil ter poškodbe, zastrupitve in nekatere druge posledice zunanjih vzrokov. Meritve so opredeljene na enega ali tisoč prebivalcev. Podatki so tipa števec in obsegajo 10 920 podatkovnih polj. Število manjkajočih zapisov: manjkajo podatki za vzrok smrti nekatere infekcijske in parazitske bolezni do leta 2019.
+Opis predprocesiranja: podatke smo naložili v obliki csv datoteke in s pomočjo ukaza read_csv shranili v podatkovno strukturo. <br>
 
 ### Glavna vprašanja/cilji
 Naši cilj pri obdelavi podatkov in izdelavi grafov je bil odgovoriti na vprašanja:<br>
@@ -115,6 +113,7 @@ plt.show()
 **4.	Kakšen je vpliv korone na število smrti med leti 2020 in 2022?**<br>
 * Po letu 2009 število smrti narašča.
 * Leta 2020 je število smrti zelo hitro začelo naraščati, lahko sklepamo da zaradi korone.
+* Pred letom 2008 je umrlo več moških kot žensk, po letu 2008 pa več žensk kot moških.
 
 ![Screenshot 2023-04-19 at 00 21 04](https://user-images.githubusercontent.com/61201874/232917806-3ae3c8b4-5340-4124-be59-4f18bb7ac9f2.png)
 ```
