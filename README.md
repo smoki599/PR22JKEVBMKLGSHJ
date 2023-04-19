@@ -42,6 +42,47 @@ Grafi vzrokov smrti po posameznih regijah:
 ![Screenshot 2023-04-18 at 22 10 20](https://user-images.githubusercontent.com/61201874/232918674-6f948e93-6f5b-473b-bf23-861dfd547144.png)
 ![Screenshot 2023-04-18 at 22 10 34](https://user-images.githubusercontent.com/61201874/232918682-c07e4296-d1ef-42e3-a672-26f23171865d.png)
 ![Screenshot 2023-04-18 at 22 10 45](https://user-images.githubusercontent.com/61201874/232918713-b5fbcbb1-308c-41ae-8c46-a093833f5899.png)
+```
+#==============SEZNAM VZROKOV=============
+
+Y = df['STATISTIÈNA REGIJA'][1:13]
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.drop(vzroki[1:]).plot( y=Y, kind='bar', title="Vzrok smrti v regijah na 1000 prebivalcev", figsize=(12,4), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+plt.show()
+
+
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.drop(returnAllBut(vzroki,1)[:]).plot( y=Y, kind='bar', title="Vzrok smrti v regijah na 1000 prebivalcev", figsize=(12,4), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+plt.show()
+
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.drop(returnAllBut(vzroki,2)[:]).plot( y=Y, kind='bar', title="Vzrok smrti v regijah na 1000 prebivalcev", figsize=(12,4), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+plt.show()
+
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.drop(returnAllBut(vzroki,3)[:]).plot( y=Y, kind='bar', title="Vzrok smrti v regijah na 1000 prebivalcev", figsize=(12,4), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+plt.show()
+
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.drop(returnAllBut(vzroki,4)[:]).plot( y=Y, kind='bar', title="Vzrok smrti v regijah na 1000 prebivalcev", figsize=(12,4), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+plt.show()
+
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.drop(returnAllBut(vzroki,5)[:]).plot( y=Y, kind='bar', title="Vzrok smrti v regijah na 1000 prebivalcev", figsize=(12,4), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+plt.show()
+
+frame = pd.DataFrame(data=smrti, index = vzroki)
+frame.plot( y=Y, kind='bar', title="V comp", figsize=(12,8), ylabel='Število smrti na 1000 prebivalcev"', rot=0)
+frame.plot
+
+plt.xlabel("Vzrok smrti")
+plt.ylabel("Število smrti na 1000 prebivalcev")
+plt.title("Vzrok smrti v regijah na 1000 prebivalcev")
+plt.legend()
+plt.xticks(rotation=90)
+plt.show()
+```
+<br>
 
 
 **2.	Kateri vzrok smrti je najpogostejši za posamezen spol?**<br>
@@ -49,6 +90,25 @@ Grafi vzrokov smrti po posameznih regijah:
 * Najmanj moških in žensk umre zaradi bolezni prebavil.
 
 ![Screenshot 2023-04-19 at 00 15 57](https://user-images.githubusercontent.com/61201874/232917070-f5aa20be-9470-4072-9eb0-39f408a614af.png)
+```
+# prikažemo porazdelitev vzrokov smrti za vsak spol
+X = moski_po_vzrokih
+df_moski = pd.DataFrame(moski_po_vzrokih)
+df_zenske = pd.DataFrame(zenske_po_vzrokih)
+x_axis = np.arange(len(X))
+
+plt.bar(x_axis - 0.2, df_moski.values[0], 0.4, label = 'Moški')
+plt.bar(x_axis + 0.2, df_zenske.values[0], 0.4, label = 'Ženske')
+
+plt.xticks(x_axis, X)
+plt.xlabel("Vzroki smrti")
+plt.ylabel("Število smrti")
+plt.title("Primerjava vzrokov smrti za vsak spol")
+plt.legend()
+plt.xticks(rotation=90)
+plt.show()
+```
+<br>
 
 
 **3.	Kako je naraščalo število smrti po Sloveniji?**<br>
@@ -57,5 +117,19 @@ Grafi vzrokov smrti po posameznih regijah:
 * Leta 2020 je število smrti zelo hitro začelo naraščati, lahko sklepamo da zaradi korone.
 
 ![Screenshot 2023-04-19 at 00 21 04](https://user-images.githubusercontent.com/61201874/232917806-3ae3c8b4-5340-4124-be59-4f18bb7ac9f2.png)
+```
+# prikažemo porazdelitev števila smrti za vsak spol
+X = list(moski_po_letih.keys())
+Y1 = list(moski_po_letih.values())
+Y2 = list(zenske_po_letih.values())
 
+plt.plot(X, Y1, label='Moški')
+plt.plot(X, Y2, label='Ženske')
 
+plt.xlabel('Leto')
+plt.ylabel('Število smrti')
+plt.title('Naraščanje vzrokov smrti po Sloveniji')
+plt.xticks(rotation=90)
+plt.legend()
+plt.show()
+```
