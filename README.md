@@ -13,11 +13,11 @@ Vsak se je že kdaj vprašal kako bo umrl, zato smo se mi odločili raziskati za
 Zanimajo nas najpogostejši vzroki smrti v Sloveniji in ali se razlikujejo glede na spol in regijo. Izbrali smo si podatke, ki nam prikažejo pogoste vzroke smrti v Sloveniji. S tem si lažje predstavljamo zdravstveno stanje celotnega prebivalstva in zaradi česa ljudje umrejo. Pogledali smo tudi ali je v času korone virusa število umrlih res naraslo.<br>
 
 ### Opis podatkov
-Uporabljali bomo en vir podakov, z ministrstva za upravo in spadajo pod področje prebivalstva in družbe: https://podatki.gov.si/dataset/surs05l3016s. Podatki nudijo vpogled v pogoste vzroke smrti v Sloveniji, kar je ključno za razumevanje zdravstvenega stanja celotnega prebivalstva. Razdeljeni so na spol, statistično regijo, leto in vzrok smrti. Bolezni so opredeljene v šestih skupinah: nekatere infekcijske in parazitske bolezni, neoplazme, bolezni obtočil, bolezni dihal, bolezni prebavil ter poškodbe, zastrupitve in nekatere druge posledice zunanjih vzrokov. Meritve so opredeljene na enega ali tisoč prebivalcev. Podatki so tipa števec in obsegajo 10 920 podatkovnih polj. Število manjkajočih zapisov: manjkajo podatki za vzrok smrti nekatere infekcijske in parazitske bolezni do leta 2019.
+Uporabljali bomo en vir podakov, z ministrstva za upravo in spadajo pod področje prebivalstva in družbe: https://podatki.gov.si/dataset/surs05l3016s. Podatki nudijo vpogled v pogoste vzroke smrti v Sloveniji, kar je ključno za razumevanje zdravstvenega stanja celotnega prebivalstva. Razdeljeni so na spol, statistično regijo, leto in vzrok smrti. Bolezni so opredeljene v šestih skupinah: nekatere infekcijske in parazitske bolezni, neoplazme, bolezni obtočil, bolezni dihal, bolezni prebavil ter poškodbe, zastrupitve in nekatere druge posledice zunanjih vzrokov. Meritve so opredeljene na enega ali tisoč prebivalcev. Podatki so tipa števec in obsegajo 10 920 podatkovnih polj. Število manjkajočih zapisov: manjkajo podatki za vzrok smrti nekaterih infekcijskih in parazitskih bolezni do leta 2019.
 Opis predprocesiranja: podatke smo naložili v obliki csv datoteke in s pomočjo ukaza read_csv shranili v podatkovno strukturo. <br>
 
 ### Glavna vprašanja/cilji
-Naši cilj pri obdelavi podatkov in izdelavi grafov je bil odgovoriti na vprašanja:<br>
+Naš cilj pri obdelavi podatkov in izdelavi grafov je bil odgovoriti na vprašanja:<br>
 1.	Kateri vzrok smrti je najpogostejši glede na statistično regijo?
 2.	Kateri vzrok smrti je najpogostejši za posamezen spol? 
 3.	Kako je naraščalo število smrti po Sloveniji? 
