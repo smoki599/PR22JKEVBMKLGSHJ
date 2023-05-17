@@ -111,9 +111,12 @@ plt.show()
 
 **3.	Kako je naraščalo število smrti po Sloveniji?**<br>
 **4.	Kakšen je vpliv korone na število smrti med leti 2020 in 2022?**<br>
+* Razlika med številoma smrti dveh določenih let v posameznih regijah <br>
+![animated_map](https://github.com/smoki599/PR22JKEVBMKLGSHJ/assets/79158550/5eddfa7a-1bfc-47a1-b255-a2305c4808c1)
 * Po letu 2009 število smrti narašča.
 * Leta 2020 je število smrti zelo hitro začelo naraščati, lahko sklepamo da zaradi korone.
 * Pred letom 2008 je umrlo več moških kot žensk, po letu 2008 pa več žensk kot moških.
+
 <img width="743" alt="graf1" src="https://github.com/smoki599/PR22JKEVBMKLGSHJ/assets/79158550/068b4d32-4678-4b26-8f57-8845f8dcfb2a">
 
 ```
@@ -147,11 +150,10 @@ plt.show()
 ```
 <br>
 
+<br>
+
 **5. Primerjava števila smrti z drugimi EU državami** <br>
 * Iz grafa lahko vidimo, da največ ljudi umre v Bulgariji.
 * Najmanj ljudi umre na Islandiji in v Azerbaijanu.
 * V Sloveniji je približno 10 smrti na 1000 prebivalcev na leto.
 ![graf6](https://github.com/smoki599/PR22JKEVBMKLGSHJ/assets/79158550/33901c6a-31c1-4173-87ec-3b878583dab6)
-
-
-
